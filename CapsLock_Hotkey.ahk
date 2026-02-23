@@ -26,7 +26,7 @@ SC3A Up:: {
 
 doublepress_and_longpress(___button) {
     global capslock_up, debuging, sencondkey_down
-    if (KeyWait(___button, "T0.30")) {
+    if (KeyWait(___button, "T0.35")) {
         debug("One Click", debuging)
         debug(sencondkey_down, debuging)
         if (sencondkey_down) {
@@ -55,7 +55,6 @@ global sencondkey_down
 sc1E & sc17:: {
     SendEvent "!{UP}"
 }
-
 
 ;  press k while holding q => Alt + Down
 sc1E & sc25:: {
