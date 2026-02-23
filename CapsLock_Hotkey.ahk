@@ -4,10 +4,11 @@
 ; #Include lib/kill_script.ahk
 InstallKeybdHook
 
-debuging := false
+debuging := true
 capslock_up := true
 sencondkey_down := false
 
+; SC3A  down == CAPS lock Code
 SC3A:: { ; CapsLock
     global capslock_up
     if (capslock_up) {
@@ -16,6 +17,7 @@ SC3A:: { ; CapsLock
     }
 }
 
+; SC3A up : CapsLock Up
 SC3A Up:: {
     global capslock_up
     capslock_up := true
@@ -24,7 +26,7 @@ SC3A Up:: {
 
 doublepress_and_longpress(___button) {
     global capslock_up, debuging, sencondkey_down
-    if (KeyWait(___button, "T0.15")) {
+    if (KeyWait(___button, "T0.30")) {
         debug("One Click", debuging)
         debug(sencondkey_down, debuging)
         if (sencondkey_down) {
@@ -45,13 +47,17 @@ doublepress_and_longpress(___button) {
 ; qqq}
 ; #HotIf GetKeyState("CapsLock", "P")iiiii
 
+; Si CapsLock est appuyée
 #HotIf GetKeyState("SC3A", "P")
 global sencondkey_down
 
-; we need to write it with ScanCode  / press i while holding q
+;  press i while holding q => Alt + Up
 sc1E & sc17:: {
     SendEvent "!{UP}"
 }
+
+
+;  press k while holding q => Alt + Down
 sc1E & sc25:: {
     SendEvent "!{Down}"
 }

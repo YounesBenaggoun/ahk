@@ -1,4 +1,5 @@
 ; Kill Boucle ----------------------------------------
+; kill screen forgoten at the Hospital pour don't find prouf 
 SetTimer myBoucle, 60000 ; 1 minute
 myBoucle() {
     now := Number(FormatTime(, "Hmm"))
