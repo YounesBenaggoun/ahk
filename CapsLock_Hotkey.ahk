@@ -24,7 +24,7 @@ SC3A Up:: {
 
 doublepress_and_longpress(___button) {
     global capslock_up, debuging, sencondkey_down
-    if (KeyWait(___button, "T0.25")) {
+    if (KeyWait(___button, "T0.15")) {
         debug("One Click", debuging)
         debug(sencondkey_down, debuging)
         if (sencondkey_down) {
@@ -41,14 +41,12 @@ doublepress_and_longpress(___button) {
 
 ; q k& Alt:: {
 
-
 ;     MsgBox("i and q")
 ; qqq}
 ; #HotIf GetKeyState("CapsLock", "P")iiiii
 
 #HotIf GetKeyState("SC3A", "P")
 global sencondkey_down
-
 
 ; we need to write it with ScanCode  / press i while holding q
 sc1E & sc17:: {
