@@ -5,110 +5,101 @@
 InstallKeybdHook
 
 debuging := true
-capslock_up := true
-sencondkey_down := false
+arrowMode := false
+capsState := "UP"
 
 ; SC3A  down == CAPS lock Code
 SC3A:: { ; CapsLock
-    global capslock_up
-    if (capslock_up) {
-        capslock_up := false
-        doublepress_and_longpress("SC3A")
+    global capsState, arrowMode
+    if (capsState = "UP") {
+        capsState := "DOWN"
     }
+    return false
 }
 
 ; SC3A up : CapsLock Up
 SC3A Up:: {
-    global capslock_up
-    capslock_up := true
+    global capsState
+    global arrowMode
+
+    if (capsState = "DOWN") {
+        capsState := "UP"
+        if (!arrowMode) {
+            SetCapsLockState !GetKeyState("CapsLock", "T")
+        }
+        arrowMode := false
+    }
     return false
 }
 
-doublepress_and_longpress(___button) {
-    global capslock_up, debuging, sencondkey_down
-    if (KeyWait(___button, "T0.35")) {
-        debug("One Click", debuging)
-        debug(sencondkey_down, debuging)
-        if (sencondkey_down) {
-            sencondkey_down := false
-            return
-        }
-        SetCapsLockState !GetKeyState("CapsLock", "T")
-    } else {
-        debug("Long Click", debuging)
-        return
-    }
-    return
-}
-
-; q k& Alt:: {
-
-;     MsgBox("i and q")
-; qqq}
-; #HotIf GetKeyState("CapsLock", "P")iiiii
-
 ; Si CapsLock est appuyée
 #HotIf GetKeyState("SC3A", "P")
-global sencondkey_down
+global arrowMode
+
+sc17:: { ;i
+    Send "{Up}"
+    global arrowMode
+    arrowMode := true
+    sencondkey_down := true
+}
+sc25:: { ;k
+    Send "{Down}"
+    global arrowMode
+    arrowMode := true
+}
+sc24:: { ;j
+    Send "{Left}"
+    global arrowMode
+    arrowMode := true
+}
+sc26:: { ;L
+    Send "{Right}"
+    global arrowMode
+    arrowMode := true
+}
+sc16:: { ;u
+    Send "{BackSpace}"
+    global arrowMode
+    arrowMode := true
+}
+sc18:: { ;o
+    Send "{Del}"
+    global arrowMode
+    arrowMode := true
+}
+sc23:: { ;h
+    Send "{Home}"
+    global arrowMode
+    arrowMode := true
+}
+sc27:: { ; m
+    Send "{End}"
+    global arrowMode
+    arrowMode := true
+}
+sc19:: { ;p
+    Send "{PgUp}"
+    global arrowMode
+    arrowMode := true
+}
+sc35:: { ; !
+    Send "{PgDn}"
+    global arrowMode
+    arrowMode := true
+}
 
 ;  press i while holding q => Alt + Up
 sc1E & sc17:: {
     SendEvent "!{UP}"
+    global arrowMode
+    arrowMode := true
 }
 
 ;  press k while holding q => Alt + Down
 sc1E & sc25:: {
     SendEvent "!{Down}"
+    global arrowMode
+    arrowMode := true
 }
 
-sc17:: { ;i
-    Send "{Up}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc25:: { ;k
-    Send "{Down}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc24:: { ;j
-    Send "{Left}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc26:: { ;L
-    Send "{Right}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc16:: { ;u
-    Send "{BackSpace}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc18:: { ;o
-    Send "{Del}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc23:: { ;h
-    Send "{Home}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc27:: { ; m
-    Send "{End}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc19:: { ;p
-    Send "{PgUp}"
-    global sencondkey_down
-    sencondkey_down := true
-}
-sc35:: { ; !
-    Send "{PgDn}"
-    global sencondkey_down
-    sencondkey_down := true
-}
 #HotIf

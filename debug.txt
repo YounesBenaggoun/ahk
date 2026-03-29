@@ -1,187 +1,24 @@
-14:14:44 -- One Click
-14:14:44 -- 0
-14:14:46 -- One Click
-14:14:46 -- 0
-14:14:47 -- Long Click
-14:14:49 -- Long Click
-14:14:50 -- One Click
-14:14:50 -- 0
-14:14:51 -- One Click
-14:14:51 -- 0
-14:14:53 -- Long Click
-14:14:56 -- Long Click
-14:14:57 -- One Click
-14:14:57 -- 1
-14:14:58 -- One Click
-14:14:58 -- 0
-14:15:00 -- One Click
-14:15:00 -- 1
-14:15:01 -- One Click
-14:15:01 -- 0
-14:15:03 -- One Click
-14:15:03 -- 0
-14:15:05 -- One Click
-14:15:05 -- 0
-14:15:08 -- One Click
-14:15:08 -- 0
-14:15:09 -- One Click
-14:15:09 -- 0
-14:15:10 -- One Click
-14:15:10 -- 0
-14:15:12 -- One Click
-14:15:12 -- 0
-14:15:13 -- One Click
-14:15:13 -- 0
-14:15:14 -- One Click
-14:15:14 -- 0
-14:15:15 -- One Click
-14:15:15 -- 0
-14:15:22 -- Long Click
-14:15:24 -- One Click
-14:15:24 -- 1
-14:15:26 -- One Click
-14:15:26 -- 1
-14:15:27 -- One Click
-14:15:27 -- 1
-14:15:29 -- One Click
-14:15:29 -- 0
-14:15:31 -- One Click
-14:15:31 -- 0
-14:15:32 -- One Click
-14:15:32 -- 1
-14:15:33 -- One Click
-14:15:33 -- 1
-14:15:34 -- One Click
-14:15:34 -- 1
-14:15:36 -- One Click
-14:15:36 -- 0
-14:15:38 -- One Click
-14:15:38 -- 0
-14:15:46 -- One Click
-14:15:46 -- 0
-14:15:47 -- One Click
-14:15:47 -- 0
-14:15:49 -- One Click
-14:15:49 -- 0
-14:15:50 -- One Click
-14:15:50 -- 0
-14:15:52 -- One Click
-14:15:52 -- 0
-14:15:53 -- One Click
-14:15:53 -- 0
-14:15:53 -- One Click
-14:15:53 -- 0
-14:15:54 -- Long Click
-14:15:55 -- One Click
-14:15:55 -- 1
-14:15:57 -- One Click
-14:15:57 -- 0
-14:15:58 -- One Click
-14:15:58 -- 0
-14:15:59 -- One Click
-14:15:59 -- 1
-14:15:59 -- One Click
-14:15:59 -- 0
-14:16:00 -- One Click
-14:16:00 -- 1
-14:16:00 -- One Click
-14:16:00 -- 1
-14:16:01 -- One Click
-14:16:01 -- 1
-14:16:02 -- One Click
-14:16:02 -- 0
-14:16:02 -- One Click
-14:16:02 -- 1
-14:16:03 -- One Click
-14:16:03 -- 0
-14:16:04 -- One Click
-14:16:04 -- 0
-14:16:05 -- One Click
-14:16:05 -- 0
-14:16:06 -- Long Click
-14:16:10 -- Long Click
-14:16:11 -- One Click
-14:16:11 -- 1
-14:16:13 -- One Click
-14:16:13 -- 0
-14:16:13 -- One Click
-14:16:13 -- 0
-14:16:14 -- One Click
-14:16:14 -- 0
-14:16:15 -- One Click
-14:16:15 -- 0
-14:16:16 -- One Click
-14:16:16 -- 0
-14:16:17 -- One Click
-14:16:17 -- 1
-14:16:18 -- One Click
-14:16:18 -- 1
-14:16:19 -- One Click
-14:16:19 -- 1
-14:16:20 -- Long Click
-14:16:22 -- Long Click
-14:23:46 -- Long Click
-14:25:57 -- Long Click
-14:25:58 -- One Click
-14:25:58 -- 1
-14:25:58 -- One Click
-14:25:58 -- 1
-14:26:08 -- Long Click
-14:26:21 -- Long Click
-15:10:50 -- Long Click
-15:11:02 -- Long Click
-15:11:05 -- Long Click
-15:12:10 -- Long Click
-15:34:11 -- One Click
-15:34:11 -- 1
-15:34:31 -- Long Click
-15:34:35 -- Long Click
-15:39:17 -- One Click
-15:39:17 -- 1
-15:39:51 -- One Click
-15:39:51 -- 1
-15:51:45 -- Long Click
-15:52:08 -- One Click
-15:52:08 -- 1
-15:54:15 -- Long Click
-15:54:40 -- One Click
-15:54:40 -- 1
-15:55:03 -- Long Click
-15:55:07 -- One Click
-15:55:07 -- 1
-15:55:13 -- One Click
-15:55:13 -- 1
-15:55:23 -- Long Click
-15:55:24 -- Long Click
-15:55:25 -- Long Click
-15:55:25 -- One Click
-15:55:25 -- 1
-15:55:34 -- One Click
-15:55:34 -- 1
-15:56:16 -- Long Click
-15:56:19 -- One Click
-15:56:19 -- 1
-15:58:24 -- Long Click
-15:59:27 -- Long Click
-16:00:21 -- Long Click
-16:00:23 -- Long Click
-16:00:40 -- One Click
-16:00:40 -- 1
-16:00:43 -- One Click
-16:00:43 -- 1
-16:02:52 -- Long Click
-16:03:10 -- Long Click
-16:03:25 -- Long Click
-16:03:27 -- One Click
-16:03:27 -- 1
-16:03:41 -- One Click
-16:03:41 -- 1
-16:03:42 -- One Click
-16:03:42 -- 1
-16:04:06 -- One Click
-16:04:06 -- 1
-16:04:16 -- One Click
-16:04:16 -- 1
-16:12:06 -- Long Click
-16:12:07 -- Long Click
-16:12:09 -- Long Click
+___buttonBOLN
+
+
+BLNB
+___buttonBOLN
+
+
+DQDFLDFGJDFGslsfljsdf
+
+555
+45
+5
+LLSD
+
+QSDLSDQLqsdfosdfLSDJLSDF
+
+sdfljsdfjl
+LSSLlllkIiiiIIii
+54
+5
+
+sdljsdljf
+
+sdfljsdfjl
