@@ -1,0 +1,7 @@
+future -> toggle cap en keydown , only if button non programmé , et si programmé alors en reviens à la normal 
+
+explication 
+
+Cap (keyDown) -> Toggle 
+if key RAccourci -> dissable le toggle while key UP 
+
