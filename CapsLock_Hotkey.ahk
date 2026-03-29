@@ -40,7 +40,6 @@ sc17:: { ;i
     Send "{Up}"
     global arrowMode
     arrowMode := true
-    sencondkey_down := true
 }
 sc25:: { ;k
     Send "{Down}"
