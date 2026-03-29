@@ -4,7 +4,7 @@
 ; #Include lib/kill_script.ahk
 InstallKeybdHook
 
-debuging := true
+debuging := false
 arrowMode := false
 capsState := "UP"
 
