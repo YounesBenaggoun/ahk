@@ -26,6 +26,7 @@ SC3A::
     if (capsButtonState = "UP") {
         capsButtonState := "DOWN"
         pressTime := A_TickCount
+        debug(pressTime)
     }
     return false
 }
