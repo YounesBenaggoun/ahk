@@ -2,48 +2,51 @@
 #SingleInstance Force
 #Include lib/lib.ahk
 ; #Include lib/kill_script.ahk
+
 InstallKeybdHook
 
-debuging := false
-arrowMode := false
-capsState := "UP"
-t0 := 0
+; ============================================================================
+; Configuration
+; ============================================================================
 
-BUTTON_DOWN_TIMER := 250
+debuging := false
+global arrowMode := false
+global capsState := "UP"
+global pressTime := 0
+
+KEY_DOWN_DELAY := 250
 
 ; SC3A  down == CAPS lock Code
 
-SC3A:: { ; CapsLock
+SC3A::
+{
     global capsState
-    global arrowMode
-    global t0
-    
+    global pressTime
 
     if (capsState = "UP") {
         capsState := "DOWN"
-        t0 := A_TickCount
-        debug(t0)
+        pressTime := A_TickCount
+        debug(pressTime)
     }
     return false
 }
 
 ; SC3A up : CapsLock Up
 SC3A Up:: {
-    global capsState
-    global arrowMode
-    global t0
+    global capsState, arrowMode, pressTime
 
     if (capsState = "DOWN") {
         capsState := "UP"
-        if (!arrowMode) {
-            elapsed := A_TickCount - t0
-            debug(elapsed)
-            if (elapsed < 250) {
-                SetCapsLockState !GetKeyState("CapsLock", "T")
-            }
-
+        if (arrowMode) {
+            arrowMode := false
+            return false
         }
-        arrowMode := false
+
+        elapsed := A_TickCount - pressTime
+        debug(elapsed)
+        if (elapsed < KEY_DOWN_DELAY) {
+            SetCapsLockState !GetKeyState("CapsLock", "T")
+        }
     }
     return false
 }
