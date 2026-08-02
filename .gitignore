@@ -1,1 +1,10 @@
+# Debug files
 debug.txt
+
+# AutoHotkey temporary files
+*.ahk.bak
+*.tmp
+
+# Windows files
+Thumbs.db
+desktop.ini
