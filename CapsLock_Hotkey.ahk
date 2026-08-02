@@ -10,6 +10,7 @@ InstallKeybdHook
 ; ============================================================================
 
 debuging := false
+
 global capsButtonState := "UP"
 global arrowMode := false
 global pressTime := 0
@@ -26,7 +27,6 @@ SC3A::
     if (capsButtonState = "UP") {
         capsButtonState := "DOWN"
         pressTime := A_TickCount
-        debug(pressTime)
     }
     return false
 }
