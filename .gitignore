@@ -1,5 +1,6 @@
 # Debug files
 debug.txt
+node_modules
 
 # AutoHotkey temporary files
 *.ahk.bak

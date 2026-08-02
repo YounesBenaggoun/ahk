@@ -2,6 +2,6 @@ future -> toggle cap en keydown , only if button non programmé , et si programm
 
 explication 
 
-Cap (keyDown) -> Toggle 
-if key RAccourci -> dissable le toggle while key UP 
+# fait --> Cap (keyDown) -> Toggle 
+# fait --> if key RAccourci -> dissable le toggle while key UP 
 
