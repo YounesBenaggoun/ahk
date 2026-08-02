@@ -7,12 +7,22 @@ InstallKeybdHook
 debuging := false
 arrowMode := false
 capsState := "UP"
+t0 := 0
+
+BUTTON_DOWN_TIMER := 250
 
 ; SC3A  down == CAPS lock Code
+
 SC3A:: { ; CapsLock
-    global capsState, arrowMode
+    global capsState
+    global arrowMode
+    global t0
+    
+
     if (capsState = "UP") {
         capsState := "DOWN"
+        t0 := A_TickCount
+        debug(t0)
     }
     return false
 }
@@ -21,11 +31,17 @@ SC3A:: { ; CapsLock
 SC3A Up:: {
     global capsState
     global arrowMode
+    global t0
 
     if (capsState = "DOWN") {
         capsState := "UP"
         if (!arrowMode) {
-            SetCapsLockState !GetKeyState("CapsLock", "T")
+            elapsed := A_TickCount - t0
+            debug(elapsed)
+            if (elapsed < 250) {
+                SetCapsLockState !GetKeyState("CapsLock", "T")
+            }
+
         }
         arrowMode := false
     }
