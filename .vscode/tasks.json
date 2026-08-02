@@ -9,7 +9,7 @@
                 "/in",
                 "${workspaceFolder}\\src\\main.ahk",
                 "/out",
-                "${workspaceFolder}\\build\\main.exe"
+                "${workspaceFolder}\\build\\Nitro.exe"
             ],
             "group": {
                 "kind": "build",
