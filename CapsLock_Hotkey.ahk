@@ -10,8 +10,8 @@ InstallKeybdHook
 ; ============================================================================
 
 debuging := false
+global capsButtonState := "UP"
 global arrowMode := false
-global capsState := "UP"
 global pressTime := 0
 
 KEY_DOWN_DELAY := 250
@@ -20,31 +20,29 @@ KEY_DOWN_DELAY := 250
 
 SC3A::
 {
-    global capsState
+    global capsButtonState
     global pressTime
 
-    if (capsState = "UP") {
-        capsState := "DOWN"
+    if (capsButtonState = "UP") {
+        capsButtonState := "DOWN"
         pressTime := A_TickCount
-        debug(pressTime)
     }
     return false
 }
 
 ; SC3A up : CapsLock Up
 SC3A Up:: {
-    global capsState, arrowMode, pressTime
+    global capsButtonState, arrowMode, pressTime
 
-    if (capsState = "DOWN") {
-        capsState := "UP"
+    if (capsButtonState = "DOWN") {
+        capsButtonState := "UP"
         if (arrowMode) {
             arrowMode := false
             return false
         }
 
         elapsed := A_TickCount - pressTime
-        debug(elapsed)
-        if (elapsed < KEY_DOWN_DELAY) {
+        if (elapsed <= KEY_DOWN_DELAY) {
             SetCapsLockState !GetKeyState("CapsLock", "T")
         }
     }

@@ -13,12 +13,6 @@
 10:13:23 -- explication =>  -- 1010839609
 10:13:24 -- explication =>  -- 125
 10:13:24 -- explication =>  -- 1010840359
-10:13:24 -- explication =>  -- 141
-10:13:25 -- explication =>  -- 1010840953
-10:13:25 -- explication =>  -- 93
-10:13:25 -- explication =>  -- 1010841375
-10:13:25 -- explication =>  -- 265
-10:13:26 -- explication =>  -- 1010842031
 10:13:26 -- explication =>  -- 94
 10:13:26 -- explication =>  -- 1010842421
 10:13:26 -- explication =>  -- 110
@@ -395,3 +389,7 @@
 11:32:44 -- explication =>  -- 94
 11:32:45 -- explication =>  -- 1015600937
 11:32:45 -- explication =>  -- 109
+11:33:16 -- explication =>  -- 1015631843
+11:33:20 -- explication =>  -- 1015636156
+11:58:51 -- explication =>  -- 1017167703
+12:42:25 -- explication =>  -- 1019781250
