@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
-#Include lib/lib.ahk
+#Include functions/lib.ahk
 ; #Include lib/kill_script.ahk
 
 InstallKeybdHook
