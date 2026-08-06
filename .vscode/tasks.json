@@ -5,7 +5,10 @@
             "label": "Build AutoHotkey",
             "type": "process",
             "command": "C:\\Program Files\\AutoHotkey\\Compiler\\Ahk2Exe.exe",
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "args": [
                 "/in",
                 "${workspaceFolder}\\src\\main.ahk",
@@ -20,6 +23,22 @@
                 "echo": true,
                 "reveal": "always",
                 "focus": false,
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run AHK Tests",
+            "type": "process",
+            "command": "C:\\Program Files\\AutoHotkey\\v2\\AutoHotkey64.exe",
+            "group": "test",
+            "args": [
+                "${workspaceFolder}\\tests\\run_tests.ahk"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
                 "panel": "shared",
                 "clear": true
             },

@@ -1,7 +1,7 @@
 {
   "name": "ahk",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Bloc 2 — Gestion de projet | Compétence C2.1**",
   "main": "index.js",
   "directories": {
     "lib": "lib"
