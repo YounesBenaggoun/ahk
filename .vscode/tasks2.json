@@ -9,11 +9,7 @@
                 "/in",
                 "${workspaceFolder}\\src\\main.ahk",
                 "/out",
-                "${workspaceFolder}\\build\\Nitro.exe",
-                "/icon",
-                "${workspaceFolder}\\assets\\icon.ico",
-                "/base",
-                "C:\\Program Files\\AutoHotkey\\v2\\AutoHotkey64.exe"
+                "${workspaceFolder}\\build\\Nitro.exe"
             ],
             "group": {
                 "kind": "build",
@@ -30,3 +26,5 @@
         }
     ]
 }
+
+add icon.ico to build exe
