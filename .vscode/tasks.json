@@ -5,6 +5,7 @@
             "label": "Build AutoHotkey",
             "type": "process",
             "command": "C:\\Program Files\\AutoHotkey\\Compiler\\Ahk2Exe.exe",
+            "group": "build",
             "args": [
                 "/in",
                 "${workspaceFolder}\\src\\main.ahk",
@@ -15,10 +16,6 @@
                 "/base",
                 "C:\\Program Files\\AutoHotkey\\v2\\AutoHotkey64.exe"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
             "presentation": {
                 "echo": true,
                 "reveal": "always",
